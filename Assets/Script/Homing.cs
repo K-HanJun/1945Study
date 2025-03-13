@@ -1,0 +1,39 @@
+using UnityEngine;
+
+public class Homing : MonoBehaviour
+{
+    public GameObject target;  //플레이어
+    public float Speed = 3f;
+    Vector2 dir;
+    Vector2 dirNo;
+
+    void Start()
+    {
+        //플레이어 태그로 찾기
+        target = GameObject.FindGameObjectWithTag("Player");
+        //A - B  A바라보는 벡터     플레이어 - 미사일 
+        dir = target.transform.position - transform.position;
+        //방향벡터만 구하기 단위벡터 정규화 노말 1의 크기로 만든다.
+        dirNo = dir.normalized;
+    }
+    
+    void Update()
+    {
+        transform.Translate(dirNo * Speed * Time.deltaTime);
+    }
+    
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            //미사일지우기
+            Destroy(gameObject);
+        }
+    }
+}

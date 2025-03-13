@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject bullet;
+    public Transform pos;
     //스피드
     public float moveSpeed = 5f;
 
@@ -37,6 +39,11 @@ public class Player : MonoBehaviour
 
         if (Input.GetAxis("Vertical") >= 0.5f) anim.SetBool("Up", true);
         else anim.SetBool("Up", false);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(bullet, pos.position, Quaternion.identity);
+        }
 
         transform.Translate(moveX, moveY, 0);
     }
