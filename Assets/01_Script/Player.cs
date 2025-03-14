@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject bullet;
-    public Transform pos;
+    public GameObject[] bullet;  //총알 추후 4개 배열로 만들예정
+    public Transform pos = null;
+
+    public int power = 0;
+    //아이템
+    [SerializeField]
+    private GameObject powerup;  //private 인스펙터에서 사용하는방법
+    //레이져
+
     //스피드
     public float moveSpeed = 5f;
 
@@ -42,10 +49,31 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(bullet, pos.position, Quaternion.identity);
+            //프리팹 위치 방향 넣고 생성
+            Instantiate(bullet[power], pos.position, Quaternion.identity);
         }
 
         transform.Translate(moveX, moveY, 0);
+    }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Item"))
+        {
+            power += 1;
+
+            if (power >= 3)
+                power = 3;
+            else
+            {
+                //파워업
+                GameObject go = Instantiate(powerup, transform.position, Quaternion.identity);
+                Destroy(go, 1);
+            }
+
+            //아이템 먹은 처리
+            Destroy(collision.gameObject);
+        }
     }
 
     void SetBounds()

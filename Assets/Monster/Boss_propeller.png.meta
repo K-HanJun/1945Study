@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: 8692a42b04d718646a033ba071f8e779
+guid: 23216c7ea2a4d814f8c4f69a5a167359
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3740626451653842279
-    second: Bullet_Eg_a_0
+      213: -1402673726238237314
+    second: Boss_propeller_0
+  - first:
+      213: 5925226018228665192
+    second: Boss_propeller_1
+  - first:
+      213: -5687253349893216373
+    second: Boss_propeller_2
+  - first:
+      213: 4985649396477603258
+    second: Boss_propeller_3
+  - first:
+      213: -4868387752931124877
+    second: Boss_propeller_4
+  - first:
+      213: 1533820369654886602
+    second: Boss_propeller_5
+  - first:
+      213: -8355502586468513464
+    second: Boss_propeller_6
+  - first:
+      213: 7397073477994708810
+    second: Boss_propeller_7
+  - first:
+      213: -593745585642480417
+    second: Boss_propeller_8
+  - first:
+      213: -1487427625190061552
+    second: Boss_propeller_9
+  - first:
+      213: -7265906715710868521
+    second: Boss_propeller_10
+  - first:
+      213: 7799663917736319884
+    second: Boss_propeller_11
+  - first:
+      213: -6044121550889285162
+    second: Boss_propeller_12
+  - first:
+      213: -6405881739940661211
+    second: Boss_propeller_13
+  - first:
+      213: 925606742111920576
+    second: Boss_propeller_14
+  - first:
+      213: 557728903272698274
+    second: Boss_propeller_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,12 +91,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +158,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullet_Eg_a_0
+      name: Boss_propeller_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 11
-        width: 8
-        height: 26
+        x: 0
+        y: 0
+        width: 176
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 765d14860ff59e330800000000000000
-      internalID: 3740626451653842279
+      spriteID: 9e7928599ec6b20429d73ecd16bacedb
+      internalID: -1615095833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_propeller_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759a349a5f8fda948b155b6b16a42047
+      internalID: 1373617735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_propeller_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1438c0a1333f7f64d9ec200910dd4a3a
+      internalID: 2047163582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_propeller_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474aa0b92684cc64a97e19605c7cab42
+      internalID: 472970369
       vertices: []
       indices: 
       edges: []
@@ -138,7 +249,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 74eea87d6036ab04e8bff611799a8731
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +259,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bullet_Eg_a_0: 3740626451653842279
+      Boss_propeller_0: -1615095833
+      Boss_propeller_1: 1373617735
+      Boss_propeller_2: 2047163582
+      Boss_propeller_3: 472970369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

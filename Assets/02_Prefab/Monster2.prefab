@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7323219139819841245}
   m_Layer: 0
   m_Name: Monster2
-  m_TagString: Enemy
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   ms1: {fileID: 2048887836586279221}
   ms2: {fileID: 3738227241305585470}
   bullet: {fileID: 9177037700232647628, guid: dfa96f690a15ede49accf177bbf97180, type: 3}
+  Item: {fileID: 4261794655632047891, guid: cc3fb96f739334e4a91b7c3b6ec79876, type: 3}
 --- !u!50 &4147068880384618256
 Rigidbody2D:
   serializedVersion: 5

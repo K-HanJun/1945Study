@@ -11,9 +11,4 @@ public class Item : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         rig.AddForce(new Vector3(ItemVelocity, ItemVelocity, 0f));
     }
-    
-    void Update()
-    {
-        
-    }
 }
